@@ -1,0 +1,14 @@
+{
+  "name": "projeto-mentoria",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Página de vendas da mentoria feminina, com checkout externo Kiwify.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:publish": "node scripts/check-publish.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
