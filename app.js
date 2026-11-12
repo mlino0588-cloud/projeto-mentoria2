@@ -6,7 +6,7 @@ const money = value => new Intl.NumberFormat("pt-BR", { style: "currency", curre
 let lastState = "";
 
 document.querySelectorAll("[data-title]").forEach(el => { el.textContent = config.title; });
-document.title = `${config.title} — Você não precisa fazer isso sozinha.`;
+document.title = `${config.title} — A transformação acontece na rotina.`;
 if (config.responsibleName) { $("responsible").textContent = `Responsável: ${config.responsibleName}`; $("responsible").hidden = false; }
 if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.supportEmail)) { $("support").href = `mailto:${config.supportEmail}`; $("support").hidden = false; }
 else if (/^55\d{10,11}$/.test(config.supportWhatsapp)) { $("support").href = `https://wa.me/${config.supportWhatsapp}`; $("support").hidden = false; }
@@ -47,7 +47,7 @@ function render() {
     button.tabIndex = state.canBuy ? 0 : -1;
     if (state.canBuy) {
       button.href = checkoutWithAttribution(state.offer.checkoutUrl, location.search);
-      button.innerHTML = 'Quero garantir minha participação <span aria-hidden="true">↗</span>';
+      button.innerHTML = 'Quero ritualizar minha rotina <span aria-hidden="true">↗</span>';
       $("checkout-status").textContent = "Você será direcionada ao checkout da Kiwify.";
     } else if (state.status === "closed") {
       button.textContent = "Inscrições encerradas";

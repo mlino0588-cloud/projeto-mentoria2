@@ -1,6 +1,6 @@
-# Projeto Mentoria
+# Ritualize
 
-Página de vendas em **HTML, CSS e JavaScript**, sem dependências externas. Paleta `#FF422A`, branco e preto; fontes de sistema com preferência pela família nativa da Apple, quando disponível. Repositório preparado para Vercel ou hospedagem estática na Hostinger.
+Página de vendas em **HTML, CSS e JavaScript**, sem dependências externas. Paleta petróleo `#123F46`, coral suave `#D9765C`, cobre `#B57B53` e branco; fontes de sistema com preferência pela família nativa da Apple, quando disponível. Repositório preparado para Vercel ou hospedagem estática na Hostinger.
 
 O nome “Projeto Mentoria” é provisório. Não há fotos, credenciais ou depoimentos inventados.
 
@@ -75,15 +75,21 @@ O pós-venda não está automatizado neste repositório. Página estática não 
 
 Para a primeira versão, configure na área de membros da Kiwify as instruções de acesso pós-aprovação e mantenha conferência das matrículas. Para entrega automatizada por mensagem, use o evento autêntico de compra aprovada via webhook e um serviço no servidor/conector validado. Veja [docs/INTEGRACAO.md](docs/INTEGRACAO.md).
 
-## GitHub e VS Code
+## GitHub e atualização automática
 
-Abra esta pasta no VS Code. O editor é opcional; o mesmo código pode ser editado pelo GitHub. Para criar e enviar um novo repositório privado com GitHub CLI autenticado:
+Código: https://github.com/mlino0588-cloud/projeto-mentoria2. Site: https://projeto-mentoria2.vercel.app.
 
-```powershell
-.\scripts\publish-github.ps1
-```
+O projeto Vercel foi importado desse repositório. Commits na branch `main` disparam um novo build e atualizam o endereço após sucesso. Alterações em uma página já aberta aparecem após recarregar; o contador e a condição comercial são recalculados pela própria página conforme as datas configuradas.
 
-O script usa `gh auth login` se necessário; não pede token em texto. Ele só adiciona os arquivos deste site ao commit. Caso já exista um remote `origin`, confira o destino em vez de sobrescrevê-lo.
+O VS Code é opcional. Continue editando esta pasta e enviando os arquivos à raiz do repositório existente.
+
+## Base de conteúdo desta edição
+
+O PDF RITUALIZE.pdf descreve uma oferta de três meses por R$ 1.890. Ele foi usado para identidade, história da Aline e orientação sobre hábitos; esta página mantém a edição novembro/dezembro e seus preços R$ 99 / R$ 119 / R$ 189. O PDF original e os dados internos não são publicados junto com o site. A página não promete diagnóstico, cura ou protocolos clínicos.
+
+## Desempenho
+
+Sem bibliotecas no navegador ou fontes externas. Abstrato em SVG inline; logo em WebP e retrato em WebP carregado sob demanda, com dimensões declaradas. O build preserva uma saída estática para Vercel ou Hostinger.
 
 ## Vercel
 

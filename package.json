@@ -1,9 +1,9 @@
 {
-  "name": "projeto-mentoria",
+  "name": "ritualize",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Página de vendas da mentoria feminina, com checkout externo Kiwify.",
+  "description": "Ritualize, com Aline Lino: hábitos, rotina e apoio em grupo, com checkout externo Kiwify.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",

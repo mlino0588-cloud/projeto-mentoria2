@@ -1,8 +1,8 @@
 // Este arquivo é público. Nunca coloque senhas, tokens ou o convite privado do grupo aqui.
 export default {
   mode: "preview", // Troque para "production" somente após npm run check:publish.
-  title: "Projeto Mentoria", // Nome de trabalho; substituir pelo nome comercial aprovado.
-  responsibleName: "",
+  title: "Ritualize",
+  responsibleName: "Aline Lino",
   supportEmail: "",
   supportWhatsapp: "", // Ex.: 5544999999999, somente dígitos; atendimento, não comunidade.
   termsUrl: "",
@@ -27,6 +27,10 @@ export default {
   deliveryReady: false,
   lateEntryPolicy: "", // Explique o acesso ao material anterior para quem entra após o início.
   // Foto e depoimentos reais são opcionais. Só use material autorizado.
-  mentor: { name: "", bio: "", image: "" },
+  mentor: {
+    name: "Aline Lino",
+    bio: "O Ritualize nasceu da minha experiência com mudanças de hábitos e da vontade de compartilhar esse caminho com outras mulheres.\n\nAcredito que a transformação acontece na rotina: no cuidado com a alimentação, com o corpo e com a forma como vivemos, todos os dias.\n\nMinha proposta é caminhar com você na construção de escolhas mais conscientes e hábitos possíveis. Com troca, apoio e constância, um passo de cada vez.",
+    image: "assets/aline-lino-v1.webp"
+  },
   testimonials: [] // [{ image: "assets/depoimento-01.webp", alt: "Transcrição acessível do depoimento real" }]
 };
